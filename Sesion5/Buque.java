@@ -1,11 +1,11 @@
 package Sesion5;
 
-public class Buques {
+public class Buque {
     private String nombre;
     private double capacidad;
     private String origen;
 
-    public Buques(String nombre, double capacidad, String origen) {
+    public Buque(String nombre, double capacidad, String origen) {
         this.nombre = nombre;
         this.capacidad = capacidad;
         this.origen = origen;

@@ -1,11 +1,11 @@
 package Sesion5;
 
-public class Contenedores {
+public class Contenedor {
     private String origen;
     private String codigo;
     private double peso;
 
-    public Contenedores(String origen, String codigo, double peso) {
+    public Contenedor(String origen, String codigo, double peso) {
         this.origen = origen;
         this.codigo = codigo;
         this.peso = peso;
