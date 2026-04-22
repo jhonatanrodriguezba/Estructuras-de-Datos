@@ -1,32 +1,34 @@
 package Proyecto15Abr;
 
 public class Puerto {
-    Static Contenedor [][] patio = new Contenedor [6][2];
+    static Contenedor [][] patio = new Contenedor[6][2];
+    public static void main(String[] args) {
+        
+        Contenedor [][] patio = new Contenedor [6][2];
+
+        public void ubicarContenedor (Contenedor nuevo){
+            boolean ubicado = false;
 
 
-    public void ubicarContenedor (Contenedor nuevo){
-        boolean ubicado = false;
-
-
-        for (int i = 0; i < 6; i++){
-            for (int j = 0; j < 2; j++){
+            for (int i = 0; i < 6; i++){
+                for (int j = 0; j < 2; j++){
                     
-                if (patio [i][j] == null){
-                    patio [i][j] = nuevo;
-                    ubicado = true;
-                    System.err.println("Contenedor " + nuevo.getId() + " ubicado en la posición [" + i + "][" + j + "]");
+                    if (patio [6][2] == null){
+                        patio [6][2] = nuevo;
+                        ubicado = true;
+                        System.err.println("Contenedor " + nuevo.getId() + " ubicado en la posición [" + i + "][" + j + "]");
+                    }
                 }
             }
+            if (!ubicado){
+                System.err.println("No se pudo ubicar el contenedor " + nuevo.getId() + " en el patio.");
+            }
         }
-        if (!ubicado){
-            System.err.println("No se pudo ubicar el contenedor " + nuevo.getId() + " en el patio.");
-        }
-    }
-    public void mostrarEstadoPatio(){
-        int ocupados = 0;
-        int totalEspacios = 6 * 2;
-        for (int i = 0; i < 6; i++){
-             for (int j = 0; j < 2; j++){
+        public void mostrarEstadoPatio(){
+            int ocupados = 0;
+            int totalEspacios = 6 * 2;
+            for (int i = 0; i < 6; i++){
+                for (int j = 0; j < 2; j++){
                     if (patio [i][j] != null){
                         ocupados++;
                     }
